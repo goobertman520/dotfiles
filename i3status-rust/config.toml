@@ -1,0 +1,30 @@
+[theme]
+theme = "tokyo-night"
+
+[icons]
+icons = "awesome6"
+
+# Center: currently playing music
+[[block]]
+block = "music"
+format = " $icon {$combo.str(max_w:35) |}"
+interface_name_exclude = [".*playerctld.*"]
+
+# Right: RAM usage
+[[block]]
+block = "memory"
+format = " 󰍛 $mem_used_percents.eng(w:2) "
+interval = 2
+
+# Right: PipeWire volume
+[[block]]
+block = "sound"
+driver = "auto"
+format = " $icon {$volume.eng(w:2) |} "
+step_width = 5
+
+# Right: clock
+[[block]]
+block = "time"
+interval = 1
+format = " $timestamp.datetime(f:'%H:%M') "
