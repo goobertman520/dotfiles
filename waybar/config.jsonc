@@ -1,0 +1,53 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["ext/workspaces"],  // or "dwl/tags" if ext/ doesn't work
+  "modules-center": ["mpris"],
+  "modules-right": ["memory", "pulseaudio", "clock"],
+
+  "ext/workspaces": {
+    "format": "{icon}",
+    "ignore-hidden": true,
+    "on-click": "activate",
+    "on-click-right": "deactivate",
+    "sort-by-id": true,
+    "num-tags": 9
+  },
+
+  "mpris": {
+    "format": "{player_icon} {title} {artist}",
+    "format-paused": "{player_icon} {title} {artist}",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵",
+      "spotify": "󰓇",
+      "firefox": "󰈹"
+    },
+    "max-length": 35,
+    "ignored-players": ["playerctld"]
+  },
+
+  "memory": {
+    "interval": 2,
+    "format": "󰍛 {percentage}%",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 Muted",
+    "step": "5%",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    }
+  },
+
+  "clock": {
+    "interval": 1,
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %B %d, %Y}"
+  }
+}

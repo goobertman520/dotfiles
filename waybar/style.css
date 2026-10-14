@@ -1,0 +1,95 @@
+/* ~/.config/waybar/style.css */
+
+* {
+    font-family: "Maple Mono", "Font Awesome 6 Free", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #c0caf5;
+}
+
+/* Shared pill styling for all modules */
+#mpris,
+#memory,
+#pulseaudio,
+#clock {
+    background: #1a1b26;
+    color: #c0caf5;
+    padding: 4px 12px;
+    margin: 4px 2px;
+    border-radius: 8px;
+    border: 1px solid #2f334d;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* ---------------- MPRIS (music) ---------------- */
+#mpris {
+    color: #bb9af7;
+    padding: 1px 8px;
+}
+
+#mpris.playing {
+    color: #9ece6a;
+}
+
+#mpris.paused {
+    color: #e0af68;
+}
+
+#mpris.stopped {
+    color: #565f89;
+}
+
+/* ---------------- Memory ---------------- */
+#memory {
+    color: #7aa2f7;
+}
+
+#memory.warning {
+    color: #e0af68;
+}
+
+#memory.critical {
+    color: #f7768e;
+    animation: blink 0.8s linear infinite alternate;
+}
+
+/* ---------------- Pulseaudio (volume) ---------------- */
+#pulseaudio {
+    color: #7dcfff;
+}
+
+#pulseaudio.muted {
+    color: #565f89;
+}
+
+/* ---------------- Clock ---------------- */
+#clock {
+    color: #c0caf5;
+    padding: 4px 14px;
+}
+
+/* ---------------- Hover effects ---------------- */
+#mpris:hover,
+#memory:hover,
+#pulseaudio:hover,
+#clock:hover {
+    background: #24283b;
+    border-color: #414868;
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes blink {
+    to {
+        color: #1a1b26;
+        background: #f7768e;
+    }
+}
