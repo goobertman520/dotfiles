@@ -1,0 +1,89 @@
+# Alacritty config matched to the Firefox window and top panel in the screenshot.
+# Install: save as ~/.config/alacritty/alacritty.toml
+# Requires the Maple Mono font to be installed (family name "Maple Mono").
+
+[window]
+opacity = 0.95
+padding = { x = 10, y = 10 }
+decorations = "full"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "Maple Mono"
+style = "Regular"
+
+[font.bold]
+family = "Maple Mono"
+style = "Bold"
+
+[font.italic]
+family = "Maple Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "Maple Mono"
+style = "Bold Italic"
+
+[colors.primary]
+background = "#3e4636"
+foreground = "#e6e0cc"
+
+[colors.cursor]
+text = "#2a2f24"
+cursor = "#b7a4f0"
+
+[colors.vi_mode_cursor]
+text = "#2a2f24"
+cursor = "#f0c36a"
+
+[colors.selection]
+text = "#f2eedc"
+background = "#5a6749"
+
+[colors.search.matches]
+foreground = "#2a2f24"
+background = "#f0c36a"
+
+[colors.search.focused_match]
+foreground = "#2a2f24"
+background = "#a9cc63"
+
+[colors.hints.start]
+foreground = "#2a2f24"
+background = "#b7a4f0"
+
+[colors.hints.end]
+foreground = "#e6e0cc"
+background = "#2b2e33"
+
+[colors.normal]
+black = "#2a2f24"
+red = "#c8392b"
+green = "#8fb04a"
+yellow = "#d8a84a"
+blue = "#4f8fa3"
+magenta = "#a085d9"
+cyan = "#5fa8a0"
+white = "#c9c4ae"
+
+[colors.bright]
+black = "#4b5340"
+red = "#ff6b4a"
+green = "#a9cc63"
+yellow = "#f0c36a"
+blue = "#7fc0d6"
+magenta = "#c2a8ee"
+cyan = "#86d4c4"
+white = "#f2eedc"
+
+[colors.dim]
+black = "#1f231a"
+red = "#8a2a1f"
+green = "#65803a"
+yellow = "#9c7a35"
+blue = "#36667a"
+magenta = "#6f5c9a"
+cyan = "#3f7a72"
+white = "#9a967f"
