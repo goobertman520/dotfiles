@@ -1,0 +1,48 @@
+[font]
+size = 12.0
+
+[font.normal]
+family = "Maple Mono"
+
+[window]
+# Equivalent to foot's alpha=0.92
+opacity = 0.8
+
+[window.padding]
+# Equivalent to foot's pad=6x6
+x = 6
+y = 6
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
+[colors.selection]
+# Equivalent to foot's selection-foreground / selection-background
+text = "#ffffff"
+background = "#333333"
+
+# Regular colors — mid grays, tonal emphasis only
+[colors.normal]
+black   = "#333333"
+red     = "#888888"
+green   = "#888888"
+yellow  = "#bbbbbb"
+blue    = "#888888"
+magenta = "#bbbbbb"
+cyan    = "#bbbbbb"
+white   = "#bbbbbb"
+
+# Bright colors — lighter grays / pure white for emphasis
+[colors.bright]
+black   = "#555555"
+red     = "#bbbbbb"
+green   = "#bbbbbb"
+yellow  = "#ffffff"
+blue    = "#bbbbbb"
+magenta = "#ffffff"
+cyan    = "#ffffff"
+white   = "#ffffff"
+
+[terminal]
+shell = { program = "/run/current-system/sw/bin/nu"}
